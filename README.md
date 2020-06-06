@@ -2,7 +2,7 @@
 version : 1.0.0
 ## Public test server
 
-https://oshusha.ru/api/ or https://api.oshusha.ru/
+https://www.oshusha.ru/api/ or http://api.oshusha.ru/
 ## How to develop the server
 
 **Initialize the environment**
