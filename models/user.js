@@ -22,7 +22,7 @@ const userSchema = new mongoose.Schema({
         validate: [validator.isEmail, 'invalid email'],
         required: true,
         unique: true,
-    }
+    },
 });
 
 userSchema.statics.findUserByCredentials = function (email, password) {
