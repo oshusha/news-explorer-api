@@ -15,7 +15,7 @@ router.use(authorization);
 router.use('/users', users);
 router.use('/articles', articles);
 router.all('*', () => {
-    throw new NotFoundErr('Not found');
+  throw new NotFoundErr('Not found');
 });
 
 module.exports = router;

@@ -25,20 +25,20 @@ http.use(errors());
 http.use(error);
 
 try {
-    mongoose.connect(process.env.DATABASE_URL || 'mongodb://127.0.0.1:27017/news', {
-        useNewUrlParser: true,
-        useCreateIndex: true,
-        useFindAndModify: true,
-        useUnifiedTopology: true,
-    });
-    console.log('connected to db');
+  mongoose.connect(process.env.DATABASE_URL || 'mongodb://127.0.0.1:27017/news', {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: true,
+    useUnifiedTopology: true,
+  });
+  console.log('connected to db');
 } catch (err) {
-    console.log(err);
+  console.log(err);
 }
 
 try {
-    http.listen(process.env.PORT || 3000);
-    console.log('http is up and running');
+  http.listen(process.env.PORT || 3000);
+  console.log('http is up and running');
 } catch (err) {
-    console.log(err);
+  console.log(err);
 }
