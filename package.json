@@ -24,7 +24,7 @@
         "jsonwebtoken": "^8.5.1",
         "mongodb": "^3.5.4",
         "mongoose": "^5.9.15",
-        "pm2": "^4.4.0",
+        "pm2": "^5.2.0",
         "validator": "^12.2.0",
         "winston": "^3.2.1"
     },
